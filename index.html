@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budgeting</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <center>
+      <div>
+        <h1 id="balance"></h1>
+      </div>
+    </center>
+    <center>
+      <div class="container">
+        <label for="">Where</label>
+        <input type="text" id="item" />
+        <br /><br />
+        <label for="">How much</label>
+        <input type="number" id="cost" />
+        <br /><br /><br /><br />
+        <span><button onclick="calculate()">Add</button></span>
+      </div>
+    </center>
+    <br /><br />
+    <center>
+      <div>
+        <button onclick="displayTable()">List All</button>
+        <p id="allItems"></p>
+        <table id="myTable"></table>
+        <br />
+      </div>
+    </center>
+    <center>
+      <div>
+        <button onclick="deleteRow()">Delete</button>
+      </div>
+    </center>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
